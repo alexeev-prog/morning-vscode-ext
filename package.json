@@ -1,0 +1,26 @@
+{
+  "name": "morning-language-syntax",
+  "displayName": "Morning Language Syntax",
+  "description": "Official VS Code Extension for support Morning Programming Language",
+  "publisher": "alexeevdev",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "morning",
+      "aliases": ["Morning", "morning"],
+      "extensions": [".morning",".mrnng",".morn",".mor",".morng"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "morning",
+      "scopeName": "source.morning",
+      "path": "./syntaxes/morning.tmLanguage.json"
+    }]
+  }
+}
