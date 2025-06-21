@@ -4,8 +4,8 @@ Official VS Code Extension for support Morning Programming Language
 Snippets & syntax highlight
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/alexeev-prog/morning-vscode-ext/refs/heads/main/extension/logo.png" width="250" alt="MorningLang Logo">
     <a href="https://github.com/alexeev-prog/morning.lang">Morning Language Repo</a>
+    <p> ::: </p>
     <a href="https://alexeev-prog.github.io/morning.lang/">Morning Language Dev Docs</a>
 </p>
 
