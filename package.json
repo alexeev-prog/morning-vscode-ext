@@ -5,7 +5,7 @@
   "description": "Official VS Code Extension for support Morning Programming Language",
   "repository": "https://github.com/alexeev-prog/morning-vscode-ext",
   "publisher": "alexeevdev",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.90.0"
   },
@@ -20,39 +20,6 @@
     }
   ],
   "contributes": {
-    "taskDefinitions": [
-      {
-        "type": "morning",
-        "required": ["file"],
-        "properties": {
-          "file": {
-            "type": "string",
-            "description": "Source file to compile"
-          },
-          "output": {
-            "type": "string",
-            "description": "Output filename",
-            "default": "${fileBasenameNoExtension}"
-          },
-          "optimize": {
-            "type": "boolean",
-            "description": "Enable optimizations",
-            "default": true
-          }
-        }
-      }
-    ],
-    "customEditors": [
-      {
-        "viewType": "morning.visualizer",
-        "displayName": "Morning Visualizer",
-        "selector": [
-          {
-            "filenamePattern": "*.morning"
-          }
-        ]
-      }
-    ],
     "languages": [{
       "id": "morning",
       "aliases": ["Morning", "morning"],
