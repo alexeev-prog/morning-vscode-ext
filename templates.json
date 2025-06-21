@@ -1,0 +1,54 @@
+{
+    "main.morning": {
+      "isFileTemplate": true,
+      "when": "isNewFile && languageId == morning",
+      "contents": [
+        "// Morning Language Program",
+        "[func main ()",
+        "    [fprint \"Hello Morning World!\\n\"]",
+        "]",
+        "",
+        "[main]"
+      ]
+    },
+    "function_template.morning": {
+      "isSnippet": true,
+      "body": [
+        "[func ${1:function_name} (${2:args}) ${3:-> !return_type}",
+        "    ${0:// Function body}",
+        "]"
+      ]
+    },
+    "class_template.morning": {
+      "isSnippet": true,
+      "body": [
+        "[class ${1:ClassName}",
+        "    [var ${2:field} ${3:!type}]",
+        "    ",
+        "    [func init (${4:params})",
+        "        ${5:// Constructor}",
+        "    ]",
+        "    ",
+        "    [func ${6:method} ()",
+        "        ${7:// Method body}",
+        "    ]",
+        "]"
+      ]
+    },
+    "unit_test.morning": {
+      "isFileTemplate": true,
+      "when": "filename =~ /_test\\.morning$/",
+      "contents": [
+        "[import \"${RELATIVE_FILEPATH}\"]",
+        "",
+        "[func test_${1:feature} ()",
+        "    ${2:// Test setup}",
+        "    [check ${3:condition}",
+        "        [fprint \"Test passed!\\n\"]",
+        "        [fprint \"Test failed!\\n\"]]",
+        "]",
+        "",
+        "[test_${1:feature}]"
+      ]
+    }
+  }

@@ -1,0 +1,109 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Compile Morning (Debug)",
+        "type": "morning",
+        "command": "morningllvm",
+        "args": [
+          "-f",
+          "${file}",
+          "-o",
+          "${fileBasenameNoExtension}_debug",
+          "--no-optimize"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        },
+        "problemMatcher": "$morning-llvm"
+      },
+      {
+        "label": "Compile Morning (Release)",
+        "type": "morning",
+        "command": "morningllvm",
+        "args": [
+          "-f",
+          "${file}",
+          "-o",
+          "${fileBasenameNoExtension}",
+          "--optimize=3"
+        ],
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        },
+        "problemMatcher": "$morning-llvm"
+      },
+      {
+        "label": "Run Morning Program",
+        "type": "shell",
+        "command": "./${fileBasenameNoExtension}",
+        "dependsOn": "Compile Morning (Debug)",
+        "group": "test",
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      },
+      {
+        "label": "Generate IR Diagram",
+        "type": "morning",
+        "command": "morningllvm",
+        "args": [
+          "-f",
+          "${file}",
+          "--visualize-ir",
+          "-o",
+          "${fileBasenameNoExtension}.svg"
+        ],
+        "group": "build",
+        "presentation": {
+          "reveal": "always",
+          "panel": "dedicated"
+        }
+      },
+      {
+        "label": "Run Tests",
+        "type": "shell",
+        "command": "morningtest",
+        "args": [
+          "-f",
+          "${fileDirname}/*_test.morning"
+        ],
+        "group": "test",
+        "problemMatcher": "$morning-test"
+      }
+    ],
+    "problemMatchers": [
+      {
+        "name": "morning-llvm",
+        "owner": "morning",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^(ERROR|WARN):\\s+(.*?):(\\d+):(\\d+):\\s+(.*)$",
+          "file": 2,
+          "line": 3,
+          "column": 4,
+          "message": 5,
+          "severity": 1
+        }
+      },
+      {
+        "name": "morning-test",
+        "owner": "morning",
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          "regexp": "^\\[FAIL\\]\\s+(.*?):(\\d+):\\s+(.*)$",
+          "file": 1,
+          "line": 2,
+          "message": 3
+        }
+      }
+    ]
+  }

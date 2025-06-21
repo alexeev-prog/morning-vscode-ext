@@ -1,0 +1,128 @@
+{
+    "New function": {
+      "prefix": "func",
+      "body": "[func ${1:name} (${2:params}) ${3:body}]",
+      "description": "Define function (no return type)"
+    },
+    "New typed function": {
+      "prefix": "funct",
+      "body": "[func ${1:name} (${2:params}) -> !${3:return_type} ${4:body}]",
+      "description": "Define typed function with return type"
+    },
+    "New var": {
+      "prefix": "var",
+      "body": "[var ${1:name} ${2:value}]",
+      "description": "Define untyped variable"
+    },
+    "New var with type": {
+      "prefix": "vart",
+      "body": "[var (${1:name} !${2:type}) ${3:value}]",
+      "description": "Define typed variable"
+    },
+    "New const": {
+      "prefix": "const",
+      "body": "[const ${1:name} ${2:value}]",
+      "description": "Define untyped constant"
+    },
+    "New const with type": {
+      "prefix": "constt",
+      "body": "[const (${1:name} !${2:type}) ${3:value}]",
+      "description": "Define typed constant"
+    },
+    "Set value to var": {
+      "prefix": "set",
+      "body": "[set ${1:name} ${2:value}]",
+      "description": "Set variable value"
+    },
+    "Scope": {
+      "prefix": "scope",
+      "body": "[scope\n    ${1:body}\n]",
+      "description": "Create new scope"
+    },
+    "If-elif-else conditions": {
+      "prefix": "if",
+      "body": "[if\n    ${1:condition} ${2:then_body}\n    elif ${3:condition} ${4:then_body}\n    else ${5:else_body}\n]",
+      "description": "If-elif-else statement"
+    },
+    "Loop": {
+      "prefix": "loop",
+      "body": "[loop\n    ${1:body}\n]",
+      "description": "Infinite loop"
+    },
+    "While loop": {
+      "prefix": "while",
+      "body": "[while ${1:condition}\n    ${2:body}\n]",
+      "description": "While loop"
+    },
+    "For loop": {
+      "prefix": "for",
+      "body": "[for ${1:init} ${2:condition} ${3:step}\n    ${4:body}\n]",
+      "description": "For loop"
+    },
+    "Break loop": {
+      "prefix": "break",
+      "body": "[break]",
+      "description": "Break loop execution"
+    },
+    "Continue iteration": {
+      "prefix": "continue",
+      "body": "[continue]",
+      "description": "Continue loop iteration"
+    },
+    "Check (if-then-else)": {
+      "prefix": "check",
+      "body": "[check ${1:condition}\n    ${2:then_body}\n    ${3:else_body}\n]",
+      "description": "Ternary conditional"
+    },
+    "Formatted Print": {
+      "prefix": "fprint",
+      "body": "[fprint \"${1:format}\" ${2:args}]",
+      "description": "Formatted print"
+    },
+    "Formatted input": {
+      "prefix": "finput",
+      "body": "[finput \"${1:format}\" ${2:vars}]",
+      "description": "Formatted input"
+    },
+    "Int type": {
+        "prefix": "!int",
+        "body": "!int",
+        "description": "Integer type (64-bit)"
+    },
+    "Int32 type": {
+        "prefix": "!int32",
+        "body": "!int32",
+        "description": "32-bit integer"
+    },
+    "Int16 type": {
+        "prefix": "!int16",
+        "body": "!int16",
+        "description": "16-bit integer"
+    },
+    "Int8 type": {
+        "prefix": "!int8",
+        "body": "!int8",
+        "description": "8-bit integer"
+    },
+    "Float (fractional) type": {
+        "prefix": "!frac",
+        "body": "!frac",
+        "description": "Floating point number"
+    },
+    "String type": {
+        "prefix": "!str",
+        "body": "!str",
+        "description": "String type"
+    },
+    "Boolean type": {
+        "prefix": "!bool",
+        "body": "!bool",
+        "description": "Boolean type"
+    },
+    "Void type": {
+        "prefix": "!none",
+        "body": "!none",
+        "description": "Void type (no return value)"
+    },
+}
+

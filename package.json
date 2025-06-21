@@ -2,15 +2,57 @@
   "name": "morning-language-syntax",
   "displayName": "Morning Language Syntax",
   "description": "Official VS Code Extension for support Morning Programming Language",
+  "repository": "https://github.com/alexeev-prog/morning-vscode-ext",
   "publisher": "alexeevdev",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.90.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages", "Snippets", "Linters", "Formatters"
   ],
+  "contributes.commands": [
+    {
+      "command": "morning.runFile",
+      "title": "Run Morning File",
+      "category": "Morning"
+    }
+  ],
+  "icon": "icon.png",
   "contributes": {
+    "taskDefinitions": [
+      {
+        "type": "morning",
+        "required": ["file"],
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "Source file to compile"
+          },
+          "output": {
+            "type": "string",
+            "description": "Output filename",
+            "default": "${fileBasenameNoExtension}"
+          },
+          "optimize": {
+            "type": "boolean",
+            "description": "Enable optimizations",
+            "default": true
+          }
+        }
+      }
+    ],
+    "customEditors": [
+      {
+        "viewType": "morning.visualizer",
+        "displayName": "Morning Visualizer",
+        "selector": [
+          {
+            "filenamePattern": "*.morning"
+          }
+        ]
+      }
+    ],
     "languages": [{
       "id": "morning",
       "aliases": ["Morning", "morning"],
@@ -21,6 +63,12 @@
       "language": "morning",
       "scopeName": "source.morning",
       "path": "./syntaxes/morning.tmLanguage.json"
-    }]
+    }],
+    "snippets": [
+      {
+        "language": "morning",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
   }
 }
