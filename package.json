@@ -1,4 +1,5 @@
 {
+  "icon": "logo.png",
   "name": "morning-language-syntax",
   "displayName": "Morning Language Syntax",
   "description": "Official VS Code Extension for support Morning Programming Language",
@@ -18,7 +19,6 @@
       "category": "Morning"
     }
   ],
-  "icon": "icon.png",
   "contributes": {
     "taskDefinitions": [
       {
