@@ -57,7 +57,7 @@ This extension contributes the following settings:
 
 ### 1.0.0
 
-Initial release of Morning Language
+Initial release of Morning Language. Snippets, indentation settings, syntax highlight.
 
 <!-- ### 1.0.1
 
