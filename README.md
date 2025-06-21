@@ -3,11 +3,11 @@ Official VS Code Extension for support Morning Programming Language
 
 Snippets & syntax highlight
 
-<p align="center">
+<div align="center">
     <a href="https://github.com/alexeev-prog/morning.lang">Morning Language Repo</a>
-    <p> ::: </p>
+    <p>:::</p>
     <a href="https://alexeev-prog.github.io/morning.lang/">Morning Language Dev Docs</a>
-</p>
+</div>
 
 ## Screenshots
 
