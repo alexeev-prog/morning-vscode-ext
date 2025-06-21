@@ -1,6 +1,11 @@
 # morning-language-syntax ⚡
 Official VS Code Extension for support Morning Programming Language
 
+<div align="center">
+  <img src="https://raw.githubusercontent.com/alexeev-prog/morning.lang/refs/heads/main/docs/pallet-0.png" width="600" alt="Color Palette">
+</div>
+
+
 Snippets & syntax highlight
 
 <div align="center">
@@ -35,24 +40,6 @@ Snippets & syntax highlight
 </div>
 
 <br>
-
-<div align="center">
-  <img src="https://img.shields.io/github/languages/top/alexeev-prog/morning.lang?style=for-the-badge" alt="Top Language">
-  <img src="https://img.shields.io/github/languages/count/alexeev-prog/morning.lang?style=for-the-badge" alt="Language Count">
-  <img src="https://img.shields.io/github/license/alexeev-prog/morning.lang?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/github/issues/alexeev-prog/morning.lang?style=for-the-badge&color=critical" alt="Issues">
-  <img src="https://img.shields.io/github/last-commit/alexeev-prog/morning.lang?style=for-the-badge" alt="Last Commit">
-  <img src="https://img.shields.io/github/contributors/alexeev-prog/morning.lang?style=for-the-badge" alt="Contributors">
-</div>
-
-<div align="center" style="margin: 15px 0">
-  <img src="https://github.com/alexeev-prog/morning.lang/actions/workflows/static.yml/badge.svg" alt="Static Analysis">
-  <img src="https://github.com/alexeev-prog/morning.lang/actions/workflows/ci.yml/badge.svg" alt="CI Build">
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/alexeev-prog/morning.lang/refs/heads/main/docs/pallet-0.png" width="600" alt="Color Palette">
-</div>
 
 <!-- ## Requirements
 
