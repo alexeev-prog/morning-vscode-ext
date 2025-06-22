@@ -5,7 +5,7 @@
   "description": "Official VS Code Extension for support Morning Programming Language",
   "repository": "https://github.com/alexeev-prog/morning-vscode-ext",
   "publisher": "alexeevdev",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "engines": {
     "vscode": "^1.90.0"
   },

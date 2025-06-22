@@ -1,3 +1,15 @@
+commit 19e642dd56ab60b58bf6e56b912332180917e8c2
+Author: Alexeev Bronislav <alexeev.dev@mail.ru>
+Date:   Sun Jun 22 05:00:49 2025 +0700
+
+    fix
+
+commit 77fee3bdb0ded877fc5110dad473b5b1fc5882f8
+Author: Alexeev Bronislav <alexeev.dev@mail.ru>
+Date:   Sun Jun 22 04:55:43 2025 +0700
+
+    first release
+
 commit 1baccb16be2153be8747eea6ab0dd944ebd6b1b8
 Author: Alexeev Bronislav <alexeev.dev@mail.ru>
 Date:   Sun Jun 22 04:53:31 2025 +0700
