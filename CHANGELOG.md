@@ -1,3 +1,9 @@
+commit cdc7c627328c5f988b72e109068fc8a08d58bc78
+Author: Alexeev Bronislav <alexeev.dev@mail.ru>
+Date:   Mon Jun 23 21:09:36 2025 +0700
+
+    change arrays snippets
+
 commit d27fa9d017217a3b3a0a2add2cded93b1093a834
 Author: Alexeev Bronislav <alexeev.dev@mail.ru>
 Date:   Mon Jun 23 18:12:35 2025 +0700
