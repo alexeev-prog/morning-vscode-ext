@@ -51,7 +51,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.morning",
-                    "match": "\\b(func|var|const|set|scope|check|if|while|for|loop|importlib|space|usespace|arrnew|arrget|arrset|arridx|arrdel)\\b"
+                    "match": "\\b(func|var|const|set|scope|check|if|while|for|loop|importlib|space|usespace|arrnew|arrget|arrset)\\b"
                 }
             ]
         },

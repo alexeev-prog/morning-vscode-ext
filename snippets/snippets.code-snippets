@@ -11,23 +11,18 @@
     },
     "New array": {
       "prefix": "arrnew",
-      "body": "[arrnew ${1:type} ${2:len} ${3:name} ${4:items}]"
+      "body": "[arrnew ${1:type} ${2:len} ${3:name} ${4:items}]",
+      "description": "Create new array"
     },
     "Get array item by index": {
       "prefix": "arrget",
-      "body": "[arrget ${1:name} ${2:index}]"
+      "body": "[arrget ${1:name} ${2:index}]",
+      "description": "Get element from array by index"
     },
     "Set element in array": {
-      "prefix": "arrnew",
-      "body": "[arrset ${1:name} ${2:idx} ${3:item}]"
-    },
-    "Get array element index by value": {
-      "prefix": "arridx",
-      "body": "[arridx ${1:name} ${2:item}]"
-    },
-    "Delete item from array by index": {
-      "prefix": "arrnew",
-      "body": "[arrdel ${1:name} ${2:index}"
+      "prefix": "arrset",
+      "body": "[arrset ${1:name} ${2:idx} ${3:item}]",
+      "description": "Set element in array by index"
     },
     "New var": {
       "prefix": "var",
