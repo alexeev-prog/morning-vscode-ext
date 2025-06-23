@@ -9,6 +9,15 @@
             "include": "#keywords"
         },
         {
+            "include": "#memory-ops"
+        },
+        {
+            "include": "#bitwise-ops"
+        },
+        {
+            "include": "#byte-ops"
+        },
+        {
             "include": "#builtins"
         },
         {
@@ -31,6 +40,9 @@
         },
         {
             "include": "#function-calls"
+        },
+        {
+            "include": "#size-checks"
         }
     ],
     "repository": {
@@ -51,7 +63,31 @@
             "patterns": [
                 {
                     "name": "keyword.control.morning",
-                    "match": "\\b(func|var|const|set|scope|check|if|while|for|loop|index)\\b"
+                    "match": "\\b(func|var|const|set|scope|check|if|elif|else|while|for|loop|index)\\b"
+                }
+            ]
+        },
+        "memory-ops": {
+            "patterns": [
+                {
+                    "name": "keyword.memory.morning",
+                    "match": "\\b(mem\\-alloc|mem\\-free|mem\\-write|mem\\-read|mem\\-ptr|mem\\-deref)\\b"
+                }
+            ]
+        },
+        "bitwise-ops": {
+            "patterns": [
+                {
+                    "name": "keyword.bitwise.morning",
+                    "match": "\\b(bit\\-and|bit\\-or|bit\\-xor|bit\\-shl|bit\\-shr|bit\\-not)\\b"
+                }
+            ]
+        },
+        "byte-ops": {
+            "patterns": [
+                {
+                    "name": "keyword.byte.morning",
+                    "match": "\\b(byte\\-read|byte\\-write)\\b"
                 }
             ]
         },
@@ -59,7 +95,7 @@
             "patterns": [
                 {
                     "name": "support.function.builtin.morning",
-                    "match": "\\b(fprint|finput)\\b"
+                    "match": "\\b(fprint|finput|sizeof|align\\-as)\\b"
                 }
             ]
         },
@@ -67,7 +103,15 @@
             "patterns": [
                 {
                     "name": "storage.type.morning",
-                    "match": "!\\b(int|int64|int32|int16|int8|bool|string|void|frac|none|nil|array)\\b"
+                    "match": "!\\b(ptr|str|int|int64|int32|int16|int8|bool|string|void|frac|none|nil|array)\\b"
+                }
+            ]
+        },
+        "size-checks": {
+            "patterns": [
+                {
+                    "name": "storage.type.size.morning",
+                    "match": "!size:\\d+!\\w+"
                 }
             ]
         },
@@ -75,7 +119,7 @@
             "patterns": [
                 {
                     "name": "keyword.operator.morning",
-                    "match": "[+\\-*/%=><&|!]|==|!=|<=|>="
+                    "match": "[+\\-*/%=><&|!~]|==|!=|<=|>="
                 }
             ]
         },
@@ -115,6 +159,20 @@
                 {
                     "name": "constant.character.format.morning",
                     "match": "%[a-zA-Z]"
+                }
+            ]
+        },
+        "function-calls": {
+            "patterns": [
+                {
+                    "name": "meta.function.call.morning",
+                    "begin": "\\[",
+                    "end": "\\]",
+                    "patterns": [
+                        {
+                            "include": "$self"
+                        }
+                    ]
                 }
             ]
         }

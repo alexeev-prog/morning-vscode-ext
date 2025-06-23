@@ -1,3 +1,9 @@
+commit c043a14c60fb9ea7501b09391c2e0104e5753c27
+Author: Alexeev Bronislav <alexeev.dev@mail.ru>
+Date:   Tue Jun 24 00:21:04 2025 +0700
+
+    add arrays support
+
 commit 8de1a58f14896e2d493ec598481f6d1b56a1e9cb
 Author: Alexeev Bronislav <alexeev.dev@mail.ru>
 Date:   Mon Jun 23 21:17:57 2025 +0700
