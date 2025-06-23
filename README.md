@@ -59,13 +59,13 @@ This extension contributes the following settings:
 
 Initial release of Morning Language. Snippets, indentation settings, syntax highlight.
 
-<!-- ### 1.0.1
+### 1.0.1
 
-Fixed issue #.
+Fixed errors.
 
 ### 1.1.0
 
-Added features X, Y, and Z. -->
+Added arrays support.
 
 ---
 

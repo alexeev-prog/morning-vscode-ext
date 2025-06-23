@@ -10,19 +10,19 @@
       "description": "Define typed function with return type"
     },
     "New array": {
-      "prefix": "arrnew",
-      "body": "[arrnew ${1:type} ${2:len} ${3:name} ${4:items}]",
-      "description": "Create new array"
+      "prefix": "arr",
+      "body": "[var (${1:name} !array<${2:type},${3:size}>) (array ${4:elements})]",
+      "description": "Create array veriable"
     },
-    "Get array item by index": {
-      "prefix": "arrget",
-      "body": "[arrget ${1:name} ${2:index}]",
-      "description": "Get element from array by index"
+    "Get array element by index": {
+      "prefix": "index",
+      "body": "[index ${1:name} ${2:index}]",
+      "description": "Get array element by index"
     },
-    "Set element in array": {
-      "prefix": "arrset",
-      "body": "[arrset ${1:name} ${2:idx} ${3:item}]",
-      "description": "Set element in array by index"
+    "Set element in array by index": {
+      "prefix": "seta",
+      "body": "[set (index ${1:name} ${2:index}) ${3:value}]",
+      "description": "Set element value by index"
     },
     "New var": {
       "prefix": "var",

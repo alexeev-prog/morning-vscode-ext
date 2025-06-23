@@ -51,7 +51,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.morning",
-                    "match": "\\b(func|var|const|set|scope|check|if|while|for|loop|importlib|space|usespace|arrnew|arrget|arrset)\\b"
+                    "match": "\\b(func|var|const|set|scope|check|if|while|for|loop|index)\\b"
                 }
             ]
         },
@@ -67,7 +67,7 @@
             "patterns": [
                 {
                     "name": "storage.type.morning",
-                    "match": "!\\b(int|int64|int32|int16|int8|bool|string|void|frac|none|nil|arr)\\b"
+                    "match": "!\\b(int|int64|int32|int16|int8|bool|string|void|frac|none|nil|array)\\b"
                 }
             ]
         },
