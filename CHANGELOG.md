@@ -1,3 +1,9 @@
+commit 4022b80ff7e12b1c0fef023800f4fb70a7c74c61
+Author: Alexeev Bronislav <alexeev.dev@mail.ru>
+Date:   Sun Jun 22 07:58:52 2025 +0700
+
+    update syntax
+
 commit 19e642dd56ab60b58bf6e56b912332180917e8c2
 Author: Alexeev Bronislav <alexeev.dev@mail.ru>
 Date:   Sun Jun 22 05:00:49 2025 +0700

@@ -51,7 +51,7 @@
             "patterns": [
                 {
                     "name": "keyword.control.morning",
-                    "match": "\\b(func|var|const|set|scope|check|if|while|for|loop|importlib|space|usespace)\\b"
+                    "match": "\\b(func|var|const|set|scope|check|if|while|for|loop|importlib|space|usespace|arrnew|arrget|arrset|arridx|arrdel)\\b"
                 }
             ]
         },
@@ -67,7 +67,7 @@
             "patterns": [
                 {
                     "name": "storage.type.morning",
-                    "match": "!\\b(int|int64|int32|int16|int8|bool|string|void|frac|none|nil)\\b"
+                    "match": "!\\b(int|int64|int32|int16|int8|bool|string|void|frac|none|nil|arr)\\b"
                 }
             ]
         },
@@ -115,14 +115,6 @@
                 {
                     "name": "constant.character.format.morning",
                     "match": "%[a-zA-Z]"
-                }
-            ]
-        },
-        "function-calls": {
-            "patterns": [
-                {
-                    "name": "entity.name.function.morning",
-                    "match": "(?<=\\()[\\w\\-+]+"
                 }
             ]
         }
