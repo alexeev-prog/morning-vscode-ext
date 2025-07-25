@@ -184,6 +184,11 @@
         "body": "[sizeof !${1:type}]",
         "description": "Get size of type in bytes"
     },
+    "Aligned access": {
+        "prefix": "align",
+        "body": "[align-as ${1:pointer} ${2:alignment}]",
+        "description": "Access memory with alignment"
+    },
     "Static size check": {
         "prefix": "sizet",
         "body": "!size:${1:expected_size}!${2:type}",

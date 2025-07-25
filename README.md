@@ -1,6 +1,8 @@
 # morning-language-syntax ⚡
 Official VS Code Extension for support Morning Programming Language: Snippets & syntax highlight
 
+ > Morning lang project is abonded
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/alexeev-prog/morning.lang/refs/heads/main/docs/pallet-0.png" width="600" alt="Color Palette">
 </div>

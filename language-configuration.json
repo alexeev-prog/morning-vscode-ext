@@ -44,14 +44,6 @@
             }
         },
         {
-        "beforeText": "^\\s*\\[\\s*",
-        "afterText": "\\s*\\]\\s*$",
-            "action": {
-                "indent": "indent",
-                "appendText": "\n"
-            }
-        },
-        {
         "beforeText": "^\\s*\\]\\s*$",
             "action": {
                 "indent": "outdent"
